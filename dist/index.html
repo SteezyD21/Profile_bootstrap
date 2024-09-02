@@ -1,351 +1,278 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta
-      name="author"
-      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
-    />
-    <meta name="generator" content="Hugo 0.98.0" />
-    <link rel="icon" href="21c7c7a1e8ed827eaec9.jpg" />
-    <title>Portfolio | Douglas Aphane</title>
 
-    <!--Bootstrap set-up-->
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.2/examples/cover/"
-    />
-    <!--Bootstrap icons-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+  <meta name="generator" content="Hugo 0.98.0" />
+  <link rel="icon" href="21c7c7a1e8ed827eaec9.jpg" />
+  <title>Portfolio | Douglas Aphane</title>
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+  <!--Bootstrap set-up-->
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/cover/" />
+  <!--Bootstrap icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
+    }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, 0.1);
+      border: solid rgba(0, 0, 0, 0.15);
+      border-width: 1px 0;
+      box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+        inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+    }
 
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, 0.1);
-        border: solid rgba(0, 0, 0, 0.15);
-        border-width: 1px 0;
-        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
-          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
-      }
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
 
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
+    .bi {
+      vertical-align: -0.125em;
+      fill: currentColor;
+    }
 
-      .bi {
-        vertical-align: -0.125em;
-        fill: currentColor;
-      }
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+  </style>
 
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-    </style>
+  <!-- Custom styles for this template -->
+  <link href="f5231b50df56f48d772d.css" rel="stylesheet" />
+<script defer src="bundle.js"></script></head>
 
-    <!-- Custom styles for this template -->
-    <link href="f5231b50df56f48d772d.css" rel="stylesheet" />
-  <script defer src="bundle.js"></script></head>
-  <body class="bg-light">
-    <header class="scrolling px-5 p-3 text-white fixed-top">
-      <div>
-        <h3 class="float-md-start text-center">Portfolio</h3>
-        <nav class="nav nav-masthead justify-content-center float-md-end">
-          <a
-            class="nav-link fw-bold py-1 px-0 active"
-            aria-current="page"
-            href="#"
-            >Home</a
-          >
-          <a class="nav-link fw-bold py-1 px-0" href="#about-me">About Me</a>
-          <a class="nav-link fw-bold py-1 px-0" href="#my-projects">Projects</a>
-          <a class="nav-link fw-bold py-1 px-0" href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-    <div
-      class="banner_wrap vh-100 wv-100 text-white d-flex align-items-center justify-content-center"
-    >
-      <div class="overlay"></div>
-      <main class="text-center">
-        <h1
-          class="name_surname display-1 border-bottom-1 border border-light p-3"
-        >
-          Douglas Aphane.
-        </h1>
-        <span id="typed" class="lead"></span>
-      </main>
+<body class="bg-light">
+  <header class="scrolling px-5 p-3 text-white fixed-top">
+    <div>
+      <h3 class="float-md-start text-center">Portfolio</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
+        <a class="nav-link fw-bold py-1 px-0" href="#about-me">About Me</a>
+        <a class="nav-link fw-bold py-1 px-0" href="#my-projects">Projects</a>
+        <a class="nav-link fw-bold py-1 px-0" href="#contact">Contact</a>
+      </nav>
     </div>
-    <section id="about-me">
-      <div class="container p-5">
-        <div class="card">
-          <div class="card-body p-3">
-            <div class="row p-3">
-              <div class="col-md-6 col-sm-12">
-                <div class="row">
-                  <div class="col-md-6">
-                    <img
-                      src="e62b27a9482abd68f387.jpg"
-                      class="img-fluid"
-                      alt="pro_picture"
-                    />
-                  </div>
-                  <div class="col-md-6 mt-3">
-                    <p><strong>Name:</strong> Douglas Aphane</p>
-                    <p><strong>Profile:</strong> Fullstack Developer</p>
-                    <p><strong>Email:</strong> messykruger17@gmail.com</p>
-                    <p><strong>Contact No:</strong> +27 62 507 2492</p>
-                    <p>
-                      <strong>Skills:</strong>
-                      <span class="badge rounded-pill bg-success"> HTML </span>
-                      <span class="badge rounded-pill bg-success"> CSS </span>
-                      <span class="badge rounded-pill bg-success">
-                        Github
-                      </span>
-                      <span class="badge rounded-pill bg-success"> OOP </span>
-                      <span class="badge rounded-pill bg-success">
-                        JavaScript
-                      </span>
-                      <span class="badge rounded-pill bg-success">
+  </header>
+  <div class="banner_wrap vh-100 wv-100 text-white d-flex align-items-center justify-content-center">
+    <div class="overlay"></div>
+    <main class="text-center">
+      <h1 class="name_surname display-1 border-bottom-1 border border-light p-3">
+        Douglas Aphane.
+      </h1>
+      <span id="typed" class="lead"></span>
+    </main>
+  </div>
+  <section id="about-me">
+    <div class="container p-5">
+      <div class="card">
+        <div class="card-body p-3">
+          <div class="row p-3">
+            <div class="col-md-6 col-sm-12">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="e62b27a9482abd68f387.jpg" class="img-fluid" alt="pro_picture" />
+                </div>
+                <div class="col-md-6 mt-3">
+                  <p><strong>Name:</strong> Douglas Aphane</p>
+                  <p><strong>Profile:</strong> Fullstack Developer</p>
+                  <p><strong>Email:</strong> messykruger17@gmail.com</p>
+                  <p><strong>Contact No:</strong> +27 62 507 2492</p>
+                  <p>
+                    <strong>Skills:</strong>
+                    <span class="badge rounded-pill bg-success"> HTML </span>
+                    <span class="badge rounded-pill bg-success"> CSS </span>
+                    <span class="badge rounded-pill bg-success">
+                      Github
+                    </span>
+                    <span class="badge rounded-pill bg-success"> OOP </span>
+                    <span class="badge rounded-pill bg-success">
+                      JavaScript
+                    </span>
+                    <span class="badge rounded-pill bg-success">
                       Python
-                      </span>
-                      <span class="badge rounded-pill bg-success">
-                        PostgresSQL
-                      </span>
-                      <span class="badge rounded-pill bg-success">
-                        Express
-                      </span>
-                      <span class="badge rounded-pill bg-success"> Agile methodologies </span>
-                      <span class="badge rounded-pill bg-success">
-                        Node.js
-                      </span>
-                      <span class="badge rounded-pill bg-success"> Tailwind </span>
+                    </span>
+                    <span class="badge rounded-pill bg-success">
+                      PostgresSQL
+                    </span>
+                    <span class="badge rounded-pill bg-success">
+                      Express
+                    </span>
+                    <span class="badge rounded-pill bg-success"> Agile methodologies </span>
+                    <span class="badge rounded-pill bg-success">
+                      NodeJS
+                    </span>
+                    <span class="badge rounded-pill bg-success"> Tailwind </span>
 
-                      <span class="badge rounded-pill bg-success"> scrum methodologies</span>
-                      <span class="badge rounded-pill bg-success">
-                        JQuery
-                      </span>
-                      <span class="badge rounded-pill bg-success">
-                        SQL
-                      </span>
-                      . . . . . . . . .
-                    </p>
-                  </div>
+                    <span class="badge rounded-pill bg-success"> scrum methodologies</span>
+                    <span class="badge rounded-pill bg-success">
+                      JQuery
+                    </span>
+                    <span class="badge rounded-pill bg-success">
+                      SQL
+                    </span>
+                    . . . . . . . . .
+                  </p>
                 </div>
               </div>
-              <div class="col-md-6">
-                <h1 class="text-center text-md-start"><mark>About me</mark></h1>
-                <p class="mt-3">
-                  I am a Full stack developer, with passion and love for problem
-                  solving and bringing new solutions to our daily lives.
-                   I am
-                  always excited to take on a new challenge.
-                </p>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="my-projects">
-      <div class="container p-3">
-        <h1 class="text-center"><mark>Projects</mark></h1>
-        <div class="row">
-           
-        
-          <div class="col-md-4 mt-3">
-            <div class="card">
-              <img
-                src="05f95cd3a0d424d46915.png"
-                class="card-img-top"
-                alt="Rock paper scissors image"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Rock Paper Scissors</h5>
-                <p class="card-text">Built this with HTML, CSS, and JavaScript </p>
-                <a
-                  href=""
-                  target="_blank"
-                  class="btn btn-primary"
-                  >under development</a
-                >
-                <a
-                  href="https://github.com/SteezyD21/rock_paper_scissors"
-                  target="_blank"
-                  class="btn btn-outline-primary"
-                  ><i class="bi bi-code-slash"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mt-3">
-            <div class="card">
-              <img
-                src="http://res.cloudinary.com/ak-124210/image/upload/v1642058524/re3iw0faxvszuk43nyqe.png"
-                class="card-img-top"
-                alt="Twitter_image"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Github Profile</h5>
-                <p class="card-text">All my projects are stored on Github</p>
-                <a
-                  href="https://github.com/steezyd21
-                  target="_blank"
-                  class="btn btn-primary">
-                  View Website</a>
-                <a
-                  href="https://github.com/steezyd21?tab=repositories"
-                  target="_blank"
-                  class="btn btn-outline-primary"
-                  ><i class="bi bi-code-slash"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mt-3">
-            <div class="card">
-              <img
-                src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/bootstrap.png"
-                class="card-img-top"
-                alt="bootstrap_image"
-              />
-              <div class="card-body">
-                <h5 class="card-title">My portfolio</h5>
-                <p class="card-text">Built this with HTML, CSS && BOOTSTRAP</p>
-                <a href="#" class="btn btn-primary">View Website</a>
-                <a
-                  href="https://github.com/SteezyD21/bootstrap_profile"
-                  target="_blank"
-                  class="btn btn-outline-primary"
-                  ><i class="bi bi-code-slash"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <div class="container p-5">
-        <div class="card p-3">
-          <div class="card-body px-5">
-            <h1 class="text-center"><mark>Let's Connect</mark></h1>
-            <p class="text-center">
-              Would love to connect with fellow developers, employers and anyone
-              looking to collaborate on projects
-            </p>
-            <p class="text-center fs-2" style="color: cornflowerblue">
-              <a href="https://wa.me/27625072492" target="_blank" class=""
-                ><i class="bi bi-whatsapp"></i
-              ></a>
-              
-              <a href="https://www.linkedin.com/in/douglas-aphane" target="_blank" class="fs-2"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-              <a href="https://github.com/steezyd21" target="_blank" class="fs-2"
-                ><i class="bi bi-github"> </i
-              ></a>
-            </p>
+            <div class="col-md-6">
+              <h1 class="text-center text-md-start"><mark>About me</mark></h1>
+              <p class="mt-3">
 
-            <form action="https://formspree.io/f/mwpeoqoj" method="POST">
-              <div class="mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  name="email"
-                  id="exampleInput@Email1"
-                  aria-describedby="emailHelp"
-                  placeholder="Email address"
-                />
-              </div>
-              <div class="mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  name="text"
-                  placeholder="Enter Name"
-                />
-              </div>
-              <div class="form-floating mb-3">
-                <textarea
-                  class="form-control"
-                  placeholder="Leave a comment here"
-                  name="message"
-                  id="floatingTextarea2"
-                  style="height: 100px"
-                ></textarea>
-                <div for="floatingTextarea2">Enter Message</div>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+                I am a passionate and eager Full Stack Developer with experience in developing and implementing
+                web applications.
+                Proficient in front-end and back-end technologies, I continuously seek to expand my knowledge while
+                maintaining a strong focus on delivering high-quality code and exceptional user experiences.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <script>
-      //navbar scroll effect
-      window.addEventListener("scroll", () => {
-        const header = document.querySelector("header");
-        header.classList.toggle("scrolling", window.scrollY > 0);
-      });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-    let typed = new Typed("#typed", {
-    strings: [
-      " Full Stack developer | Curious individual! |  On a journey to discovery ...",
-    ],
-    typeSpeed: 100,
-    shuffle: true,
-  });
-    </script>
-  </body>
-  <footer class="footer bg-dark text-center text-white">
-    <div class="container p-2">
-      <p class="lead">
-        <small>© 2024: Douglas Aphane.</small>
-      </p>
     </div>
-  </footer>
+  </section>
+  <section id="my-projects">
+    <div class="container p-3">
+      <h1 class="text-center"><mark>Projects</mark></h1>
+      <div class="row">
+
+
+        <div class="col-md-4 mt-3">
+          <div class="card">
+            <img src="bf10a5ae020d70c3830c.png" class="card-img-top" alt="Visitor Management_image" style="width: 100%; height: 40%;"/>
+            <div class="card-body">
+              <h5 class="card-title">Visitor Management</h5>
+              <p class="card-text">Built this with HTML, CSS, and JavaScript </p>
+              <a href="" target="" class="btn btn-primary">View Website</a>
+              <a href="https://github.com/SteezyD21/Full-Stack-management-project" target="_blank"
+                class="btn btn-outline-primary"><i class="bi bi-code-slash"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card">
+            <img src="http://res.cloudinary.com/ak-124210/image/upload/v1642058524/re3iw0faxvszuk43nyqe.png"
+              class="card-img-top" alt="Twitter_image" />
+            <div class="card-body">
+              <h5 class="card-title">Github Profile</h5>
+              <p class="card-text">All my projects are stored on Github</p>
+              <a href="https://github.com/steezyd21
+                  target=" _blank" class="btn btn-primary">
+                View Website</a>
+              <a href="https://github.com/steezyd21?tab=repositories" target="_blank" class="btn btn-outline-primary"><i
+                  class="bi bi-code-slash"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card">
+            <img src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/bootstrap.png"
+              class="card-img-top" alt="bootstrap_image" />
+            <div class="card-body">
+              <h5 class="card-title">My portfolio</h5>
+              <p class="card-text">Built this with HTML, CSS && BOOTSTRAP</p>
+              <a href="#" class="btn btn-primary">View Website</a>
+              <a href="https://github.com/SteezyD21/bootstrap_profile" target="_blank"
+                class="btn btn-outline-primary"><i class="bi bi-code-slash"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container p-5">
+      <div class="card p-3">
+        <div class="card-body px-5">
+          <h1 class="text-center"><mark>Let's Connect</mark></h1>
+          <p class="text-center">
+            Would love to connect with fellow developers, employers and anyone
+            looking to collaborate on projects
+          </p>
+          <p class="text-center fs-2" style="color: cornflowerblue">
+            <a href="https://wa.me/27625072492" target="_blank" class=""><i class="bi bi-whatsapp"></i></a>
+
+            <a href="https://www.linkedin.com/in/douglas-aphane" target="_blank" class="fs-2"><i
+                class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/steezyd21" target="_blank" class="fs-2"><i class="bi bi-github"> </i></a>
+          </p>
+
+          <form action="https://formspree.io/f/mwpeoqoj" method="POST">
+            <div class="mb-3">
+              <input type="email" class="form-control" name="email" id="exampleInput@Email1"
+                aria-describedby="emailHelp" placeholder="Email address" />
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="name" name="text" placeholder="Enter Name" />
+            </div>
+            <div class="form-floating mb-3">
+              <textarea class="form-control" placeholder="Leave a comment here" name="message" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+              <div for="floatingTextarea2">Enter Message</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    //navbar scroll effect
+    window.addEventListener("scroll", () => {
+      const header = document.querySelector("header");
+      header.classList.toggle("scrolling", window.scrollY > 0);
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    let typed = new Typed("#typed", {
+      strings: [
+        " Full Stack developer | Curious individual! |  On a journey to discovery ...",
+      ],
+      typeSpeed: 100,
+      shuffle: true,
+    });
+  </script>
+</body>
+<footer class="footer bg-dark text-center text-white">
+  <div class="container p-2">
+    <p class="lead">
+      <small>© 2024: Douglas Aphane.</small>
+    </p>
+  </div>
+</footer>
+
 </html>
