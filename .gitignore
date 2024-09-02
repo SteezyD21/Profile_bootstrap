@@ -1,0 +1,7 @@
+node_modules/
+assets/
+styles/
+src/
+./index.html
+*.json
+*.config.js
